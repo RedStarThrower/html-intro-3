@@ -1,0 +1,79 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 0;
+	font-family: Arial, sans-serif;
+}
+
+#container {
+	max-width: 1200px;
+	margin: 0 auto; /*change?*/
+	border: 1px black solid; /*remove*/
+}
+
+.mainBox {
+	border: 3px solid #47A3DA;
+	border-right-width: 3.1px;
+	max-width: 400px;
+}
+
+p {
+	font-size: 16px;
+}	
+
+			/*optionRow*/
+
+.optionRow {
+	display: inline-block;
+	width: 100%;
+}
+
+.button {
+	display: inline-block;
+	width: 20%;
+	height: 65px;
+	/*background-color: teal;*//*change*/
+	border: 2px solid #47A3DA;
+	border-top-width: 3px;
+	border-bottom: 3px;
+}
+
+.button:first-child {
+	border-left:none;
+}
+
+.button:nth-child(5){
+	border-right:none;
+}
+
+
+			/*merchPrice*/
+
+.merchPrice {
+	border-top-width: 3px solid #47A5E0; */
+	border-left: none;
+	border-right-width: none;
+	border-bottom: none;
+	width: 100%;
+	font-size: 15px;
+	vertical-align: top;
+}
+
+h1 {
+	width: 50%;
+	display: inline-block;
+	font-size: 16px; 
+	color: #47A5E0;
+	/*text-align: left;*/
+}
+
+h2 {
+	display: inline-block;
+	font-size: 16px; 
+	font-weight: bold;
+	width: 47%;
+	color: #47A5E0;
+	text-align: right;
+}
