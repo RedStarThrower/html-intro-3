@@ -4,25 +4,71 @@
 
 body {
 	font-size: 0;
-	font-family: Arial, sans-serif;
+	font-family: Arial, Verdana, sans-serif;
 }
 
 #container {
-	max-width: 1200px;
-	margin: 0 auto; /*change?*/
+	max-width: 900px;
+	margin: 0 auto;
 	border: 1px black solid; /*remove*/
 }
 
-.mainBox {
-	border: 3px solid #47A3DA;
-	border-right-width: 3.1px;
-	max-width: 400px;
+.col {
+	display: inline-block;
+	border: 1px solid red; /*remove*/
+	vertical-align: top;
+	margin: 0 auto;
 }
 
-p {
-	font-size: 16px;
-}	
+#left {
+	max-width: 32%;
+	margin-right: 15px;
+}
 
+#mid {
+	max-width: 32%;
+	margin-right: 15px;
+}
+
+#right {
+	max-width: 32%;
+}
+
+
+			/*mainBox*/
+
+.mainBox {
+	position: relative;
+	border: 3px solid #47A3DA;
+	border-right-width: 3.1px;
+	max-width: 100%; 
+}
+
+img {
+	max-width: 100%;
+}
+
+.redoContainer {
+	display: inline-block;
+	max-width: 14%;
+	position: absolute;
+	height: 10%;
+	border: 3px solid #47A3DA;
+	text-align: center;
+	color: #47A3DA;
+	border-top: none;
+	border-right: none;
+	right: 0;
+}
+
+#redo {
+	position: relative;
+	max-width: 80%;
+	text-align: center;
+	padding-right: 10px;
+	padding-top: 3px;
+
+}
 			/*optionRow*/
 
 .optionRow {
@@ -33,11 +79,21 @@ p {
 .button {
 	display: inline-block;
 	width: 20%;
-	height: 65px;
-	/*background-color: teal;*//*change*/
+	height: 50px;
 	border: 2px solid #47A3DA;
 	border-top-width: 3px;
 	border-bottom: 3px;
+	text-align: center;
+	padding-top: 9px;
+	vertical-align: top;
+	color: #47A3DA;
+	font-size: 22px;
+	line-height: 33px;
+}
+
+.size {
+font-size: 22px;
+display: inline-block;
 }
 
 .button:first-child {
@@ -48,7 +104,7 @@ p {
 	border-right:none;
 }
 
-
+`
 			/*merchPrice*/
 
 .merchPrice {
@@ -66,7 +122,6 @@ h1 {
 	display: inline-block;
 	font-size: 16px; 
 	color: #47A5E0;
-	/*text-align: left;*/
 }
 
 h2 {
@@ -77,3 +132,44 @@ h2 {
 	color: #47A5E0;
 	text-align: right;
 }
+
+	/*responsive design*/
+
+.button:hover {
+	background-color: #47A5E0;
+	color: white;
+}
+
+.redoContainer:hover {
+	background-color: #47A5E0;
+	color: white;
+}
+
+			/*Flip*/
+/*.shirtBox {
+	perspective: 900px;
+}
+
+#flipHolder {
+ 	max-width: 400px;
+ 	position: relative;
+ 	transition: 3s transform ease;
+ 	transform-style: preserve-3d;
+}s
+
+img {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+}
+
+#back {
+	transform: rotateY(180deg);
+}
+
+input[type="button"]:active {
+	transform: rotateY(180deg);
+}
+*/
