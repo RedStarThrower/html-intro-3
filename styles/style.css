@@ -10,12 +10,10 @@ body {
 #container {
 	max-width: 900px;
 	margin: 0 auto;
-	border: 1px black solid; /*remove*/
 }
 
 .col {
 	display: inline-block;
-	border: 1px solid red; /*remove*/
 	vertical-align: top;
 	margin: 0 auto;
 	width: 32%;
@@ -74,7 +72,7 @@ body {
 			/*merchPrice*/
 
 .merchPrice {
-	border-top-width: 3px solid #47A5E0; */
+	border-top-width: 3px solid #47A5E0; 
 	border-left: none;
 	border-right-width: none;
 	border-bottom: none;
@@ -89,7 +87,7 @@ h1 {
 	font-size: 16px; 
 	color: #47A5E0;
 }
-/*I am sorry*/
+
 h2 {
 	display: inline-block;
 	font-size: 16px; 
@@ -111,11 +109,12 @@ h2 {
 .size img {
 	padding: 0;
 	border: 3px solid #47A3DA;
+	border-bottom: none;
 	height: 33%;
 	width: 25%;
 	position: absolute;
-	top: 71.8%;
-	left: 37%;
+	top: 71.2%;
+	left: 37.3%;
 	opacity: 0;
 	transition: 0.5s all ease;
 }
@@ -124,16 +123,18 @@ h2 {
 	opacity: 1;
 }
 
+
 .color img {
 	padding: 0;
 	padding-top: 4px;
 	padding-bottom: 4px;
 	border: 3px solid #47A3DA;
+	border-bottom: none;
 	height: 17%;
 	width: 25%;
 	position: absolute;
-	top: 79.7%;
-	left: 58%;
+	top: 79.5%;
+	left: 57.5%;
 	opacity: 0;
 	transition: 0.5s all ease;
 }
@@ -150,6 +151,7 @@ h2 {
 
 
 .flipHolder {
+	border: 2px solid red;
  	width: 100%;
  	height: 350px;
  	position: relative;
@@ -162,8 +164,8 @@ img {
 	position: absolute;
 	padding-right: 10px;
 	top: 50%;
-	transform: translateY(-50%);
 	left: 0;
+	transform: translateY(-50%);
 	backface-visibility: hidden;
 }
 
@@ -171,47 +173,37 @@ img {
 	transform: translateY(-50%) rotateY(180deg);
 }
 
-.redoContainer:hover ~ .flipHolder{
-	transform: rotateY(180deg);
+
+.redoContainer {
+	display: block;
+	position: absolute;
+	border: 3px solid #47A3DA;
+	color: #47A3DA;
+	border-top: none;
+	border-right: none;
+	padding-top: 8px;
+	right: 0;
+	height: 40px;
+	width: 40px;
 }
+
 
 .redoContainer:hover {
 	background-color: #47A5E0;
 	color: white;
 }
 
-
-#redo:hover {
-	position: absolute;
-	background-color: #47A3DA;
-	color: white;
+.redoContainer:hover + .flipHolder{
+	transform: rotateY(180deg);
 }
 
-.redoContainer {
-	display: inline-block;
-	position: absolute;
-	border: 3px solid #47A3DA;
-	text-align: center;
-	color: #47A3DA;
-	border-top: none;
-	border-right: none;
-	right: 0;
-	height: 30px;
-	width: 30px;
-}
 
-/*FIX ICON*/
-
-.redoCorner i:hover {
-	background-color: #47A3DA;
-	color: white;
-}
 .redoContainer i{
 	padding: 10px;
+	font-size: 22px;
+	line-height: 0;
+
 }
-
-/*FIX ICON*/
-
 
 .mainBox {
 	position: relative;
@@ -219,4 +211,3 @@ img {
 	border-right-width: 3.1px;
 	width: 100%; 
 }
-
