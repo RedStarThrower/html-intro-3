@@ -193,7 +193,7 @@ img {
 	color: white;
 }
 
-.redoContainer:hover + .flipHolder{
+.redoContainer:hover ~.flipHolder{
 	transform: rotateY(180deg);
 }
 
