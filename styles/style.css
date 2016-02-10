@@ -104,6 +104,7 @@ h2 {
 	color: white;
 }
 
+		/*size menu*/
 
 
 .size img {
@@ -123,6 +124,7 @@ h2 {
 	opacity: 1;
 }
 
+		/*color menu*/
 
 .color img {
 	padding: 0;
@@ -211,3 +213,27 @@ img {
 	border-right-width: 3.1px;
 	width: 100%; 
 }
+
+		/*mobile*/
+@media only screen and (max-width: 740px) {
+     .columns {
+        display: block;
+    }
+    
+    .box {
+        width: 100%;
+    }
+	
+    #left {
+        width: 100%;
+    }
+
+
+   #right {
+        width: 100%;
+    }
+	
+	#mid {
+        width: 100%;
+    }
+
